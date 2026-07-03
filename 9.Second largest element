@@ -1,0 +1,11 @@
+print("Enter Array List: ")
+r=list(map(int,input().split()))
+largest = r[0]
+for i in range(len(r)):
+    if r[i] > largest:
+        largest = r[i]
+sec_largest = r[0]
+for i in range(len(r)):
+    if r[i] > sec_largest and r[i] != largest:
+        sec_largest = r[i]
+print("Second largest element:",sec_largest)
