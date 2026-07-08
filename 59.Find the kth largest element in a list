@@ -1,0 +1,5 @@
+n=int(input())
+lst=list(map(int,input().split()))
+k=int(input())
+lst.sort(reverse=True)
+print(lst[k-1])
