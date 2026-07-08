@@ -1,0 +1,12 @@
+n=int(input())
+d={}
+for i in range(n):
+    key,value=input().split()
+    d[key]=value
+result={}
+seen=[]
+for key in d:
+    if d[key] not in seen:
+        result[key]=d[key]
+        seen.append(d[key])
+print(result)
