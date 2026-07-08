@@ -1,0 +1,12 @@
+stack=[]
+n=int(input())
+for i in range(n):
+    element=int(input())
+    stack.append(element)
+print(stack)
+x=int(input())
+stack.append(x)
+print(stack)
+if len(stack)>0:
+    stack.pop()
+print(stack)
