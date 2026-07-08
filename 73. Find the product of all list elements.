@@ -1,0 +1,6 @@
+n=int(input())
+lst=list(map(int,input().split()))
+product=1
+for i in lst:
+    product*=i
+print(product)
