@@ -1,0 +1,12 @@
+n=int(input())
+lst=list(map(int,input().split()))
+result=[]
+count=0
+for i in lst:
+    if i!=0:
+        result.append(i)
+    else:
+        count+=1
+for i in range(count):
+    result.append(0)
+print(result)
