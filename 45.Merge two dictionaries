@@ -1,0 +1,12 @@
+n1=int(input())
+d1={}
+for i in range(n1):
+    key,value=input().split()
+    d1[key]=value
+n2=int(input())
+d2={}
+for i in range(n2):
+    key,value=input().split()
+    d2[key]=value
+d1.update(d2)
+print(d1)
