@@ -1,0 +1,7 @@
+n=int(input())
+lst=list(map(int,input().split()))
+total=n*(n+1)//2
+sum=0
+for i in lst:
+    sum+=i
+print(total-sum)
