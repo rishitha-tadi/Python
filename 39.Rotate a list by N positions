@@ -1,0 +1,6 @@
+n=int(input())
+lst=list(map(int,input().split()))
+k=int(input())
+k=k%n
+result=lst[-k:]+lst[:-k]
+print(result)
