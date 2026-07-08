@@ -1,0 +1,11 @@
+n=int(input())
+lst=list(map(int,input().split()))
+target=int(input())
+found=False
+for i in range(n):
+    if lst[i]==target:
+        print("Found")
+        found=True
+        break
+if not found:
+    print("Not Found")
