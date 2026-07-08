@@ -1,0 +1,12 @@
+n=int(input())
+lst=list(map(int,input().split()))
+dup=[]
+for i in range(n):
+    if lst[i] not in dup:
+        count=0
+        for j in range(n):
+            if lst[i]==lst[j]:
+                count+=1
+        if count>1:
+            dup.append(lst[i])
+print(dup)
