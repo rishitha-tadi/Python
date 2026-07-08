@@ -1,0 +1,8 @@
+n=int(input())
+lst=list(map(int,input().split()))
+count={}
+for i in lst:
+    count[i]=count.get(i,0)+1
+for i in count:
+    if count[i]==1:
+        print(i,end=" ")
