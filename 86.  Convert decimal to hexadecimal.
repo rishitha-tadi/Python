@@ -1,0 +1,8 @@
+num=int(input())
+hexadecimal=""
+values="0123456789ABCDEF"
+while num>0:
+    rem=num%16
+    hexadecimal=values[rem]+hexadecimal
+    num//=16
+print(hexadecimal)
