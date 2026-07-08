@@ -1,0 +1,6 @@
+n=int(input())
+lst=list(map(int,input().split()))
+parts=int(input())
+size=n//parts
+for i in range(0,n,size):
+    print(lst[i:i+size])
