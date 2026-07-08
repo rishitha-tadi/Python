@@ -1,0 +1,9 @@
+s=input()
+def combinations(s,index,result):
+    if index==len(s):
+        if result:
+            print(result)
+        return
+    combinations(s,index+1,result+s[index])
+    combinations(s,index+1,result)
+combinations(s,0,"")
