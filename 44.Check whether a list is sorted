@@ -1,0 +1,11 @@
+n=int(input())
+lst=list(map(int,input().split()))
+flag=True
+for i in range(n-1):
+    if lst[i]>lst[i+1]:
+        flag=False
+        break
+if flag:
+    print("Sorted")
+else:
+    print("Not Sorted")
