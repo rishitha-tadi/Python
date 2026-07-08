@@ -1,0 +1,9 @@
+n=int(input())
+d={}
+for i in range(n):
+    key,value=input().split()
+    d[key]=value
+inv={}
+for key in d:
+    inv[d[key]]=key
+print(inv)
