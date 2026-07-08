@@ -1,0 +1,7 @@
+num=int(input())
+octal=""
+while num>0:
+    rem=num%8
+    octal=str(rem)+octal
+    num//=8
+print(octal)
