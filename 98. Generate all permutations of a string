@@ -1,0 +1,10 @@
+s=input()
+def permute(s,left,right):
+    if left==right:
+        print("".join(s))
+    else:
+        for i in range(left,right+1):
+            s[left],s[i]=s[i],s[left]
+            permute(s,left+1,right)
+            s[left],s[i]=s[i],s[left]
+permute(list(s),0,len(s)-1)
