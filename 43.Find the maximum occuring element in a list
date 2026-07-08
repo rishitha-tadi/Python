@@ -1,0 +1,12 @@
+n=int(input())
+lst=list(map(int,input().split()))
+count={}
+for i in lst:
+    count[i]=count.get(i,0)+1
+max_count=0
+element=0
+for i in count:
+    if count[i]>max_count:
+        max_count=count[i]
+        element=i
+print(element)
